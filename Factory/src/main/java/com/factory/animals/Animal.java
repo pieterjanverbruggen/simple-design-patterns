@@ -1,4 +1,4 @@
-package com.factory.core;
+package com.factory.animals;
 
 public abstract class Animal {
 

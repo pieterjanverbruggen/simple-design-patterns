@@ -1,7 +1,7 @@
 package com.factory;
 
-import com.factory.core.Animal;
-import com.factory.core.AnimalFactory;
+import com.factory.animals.Animal;
+import com.factory.solution.AnimalFactory;
 
 public class RunProgram {
 

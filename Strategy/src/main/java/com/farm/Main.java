@@ -10,6 +10,9 @@ public class Main {
         AnimalFactory.getInstance().createAnimal("Beagle").makeSound();
         AnimalFactory.getInstance().createAnimal("Pitbull").makeSound();
         AnimalFactory.getInstance().createAnimal("American Shorthair").makeSound();
+
+        // TODO Create a confused animal that is a dog but sounds like a bird
+
         System.out.println("Stop the program");
     }
 

@@ -1,6 +1,6 @@
-package com.factory.solution;
+package com.farm.factory;
 
-import com.factory.animals.*;
+import com.farm.animals.*;
 
 public class AnimalFactory {
 

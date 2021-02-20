@@ -1,9 +1,9 @@
-package com.factory;
+package com.farm;
 
-import com.factory.animals.Animal;
-import com.factory.solution.AnimalFactory;
+import com.farm.animals.*;
+import com.farm.factory.AnimalFactory;
 
-public class RunProgram {
+public class Main {
 
     public static void main(String[] args) throws Exception {
         System.out.println("Start the program");
@@ -11,4 +11,5 @@ public class RunProgram {
         animal.makeSound();
         System.out.println("Stop the program");
     }
+
 }

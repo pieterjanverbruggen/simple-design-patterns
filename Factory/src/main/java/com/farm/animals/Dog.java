@@ -1,4 +1,4 @@
-package com.factory.animals;
+package com.farm.animals;
 
 public class Dog extends Animal {
 

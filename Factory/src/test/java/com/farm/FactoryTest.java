@@ -1,7 +1,7 @@
-package com.factory;
+package com.farm;
 
-import com.factory.animals.Animal;
-import com.factory.solution.AnimalFactory;
+import com.farm.animals.Animal;
+import com.farm.factory.AnimalFactory;
 import org.junit.jupiter.api.Test;
 
 public class FactoryTest {

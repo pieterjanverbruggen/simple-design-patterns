@@ -1,4 +1,4 @@
-package com.car.strategy;
+package com.farmshop.strategy;
 
 public class Sweet implements Mood {
 

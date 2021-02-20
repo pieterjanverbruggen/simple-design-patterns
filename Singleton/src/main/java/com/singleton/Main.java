@@ -21,15 +21,11 @@ public class Main {
 
     private static void solution() throws IOException {
         // Two separate writer instances are created
-
-        // MyImprovedFileWriter w1 = MyImprovedFileWriter.getInstance();
-        // MyImprovedFileWriter w2 = MyImprovedFileWriter.getInstance();
-
+        MyImprovedFileWriter w1 = MyImprovedFileWriter.getInstance();
+        MyImprovedFileWriter w2 = MyImprovedFileWriter.getInstance();
         // And write a message to the same file
-
-        // w1.writeFile("w1 says Hi!");
-        // w2.writeFile("w2 says Hi there!");
-
+        w1.writeFile("w1 says Hi!");
+        w2.writeFile("w2 says Hi there!");
         // All of this works fine but it can get messy in larger programs
     }
 

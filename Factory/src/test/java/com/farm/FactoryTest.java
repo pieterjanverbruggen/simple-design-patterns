@@ -1,7 +1,7 @@
-package com.car;
+package com.farm;
 
-import com.car.animals.Animal;
-import com.car.factory.AnimalFactory;
+import com.farm.animals.Animal;
+import com.farm.factory.AnimalFactory;
 import org.junit.jupiter.api.Test;
 
 public class FactoryTest {
@@ -15,7 +15,7 @@ public class FactoryTest {
     }
 
     @Test
-    void testBeage() throws Exception {
+    void testBeagle() throws Exception {
         Animal dog = AnimalFactory.getInstance().createAnimal( "Beagle");
         assert(dog.kind.equals("Dog"));
     }

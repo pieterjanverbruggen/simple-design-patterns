@@ -1,6 +1,6 @@
-package com.car.animals;
+package com.farmshop.animals;
 
-import com.car.strategy.Mood;
+import com.farmshop.strategy.Mood;
 
 public class Dog extends Animal {
 

@@ -1,4 +1,4 @@
-package com.car;
+package com.post;
 
 public class Package {
 
@@ -11,6 +11,8 @@ public class Package {
     public Package(){
         state = PackageState.Ordered;
     }
+
+    // TODO Implement the State Pattern to clean up this code
 
     public void previousState() {
         if (state == PackageState.Ordered) {

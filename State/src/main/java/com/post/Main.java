@@ -1,4 +1,4 @@
-package com.car;
+package com.post;
 
 public class Main {
 
@@ -6,9 +6,6 @@ public class Main {
         System.out.println("Start the program");
         // Create Package
         Package order = new Package();
-
-        // TODO Implement the State Pattern
-
         order.printStatus();
         order.nextState();
         order.nextState();

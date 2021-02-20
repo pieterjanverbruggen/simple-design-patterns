@@ -1,7 +1,7 @@
-package com.car.animals;
+package com.farmshop.animals;
 
-import com.car.strategy.Mood;
-import com.car.strategy.Normal;
+import com.farmshop.strategy.Mood;
+import com.farmshop.strategy.Normal;
 
 public abstract class Animal {
 

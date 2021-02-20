@@ -1,4 +1,4 @@
-package com.car;
+package com.manufacturer;
 
 public class Car {
 

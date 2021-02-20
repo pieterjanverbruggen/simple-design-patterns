@@ -1,4 +1,4 @@
-package com.car.animals;
+package com.farm.animals;
 
 public class Dog extends Animal {
 

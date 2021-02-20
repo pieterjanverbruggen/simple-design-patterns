@@ -1,6 +1,8 @@
-package com.car.factory;
+package com.farmshop.factory;
 
-import com.car.animals.*;
+import com.farmshop.animals.*;
+import com.farmshop.strategy.Angry;
+import com.farmshop.strategy.Sweet;
 
 public class AnimalFactory {
 
@@ -16,8 +18,9 @@ public class AnimalFactory {
         switch(breed) {
             case "British Shorthair":
             case "American Shorthair":
-                return new Cat();
-            case "Beagle": return new Dog();
+                return new Cat(new Sweet());
+            case "Beagle": return new Dog(new Sweet());
+            case "Pitbull": return new Dog(new Angry());
         }
         throw new Exception("My apologies, but I do not know an animal of type: " + breed);
     }

@@ -1,6 +1,6 @@
-package com.car;
+package com.farmshop;
 
-import com.car.factory.AnimalFactory;
+import com.farmshop.factory.AnimalFactory;
 
 public class Main {
 
@@ -10,7 +10,7 @@ public class Main {
         AnimalFactory.getInstance().createAnimal("Pitbull").makeSound();
         AnimalFactory.getInstance().createAnimal("American Shorthair").makeSound();
 
-        // TODO Create a confused animal that is a dog but sounds like a bird
+        // TODO Create a confused dog AND cat that both sound like a bird.. Tsjirp-Tsjirp!
 
         System.out.println("Stop the program");
     }

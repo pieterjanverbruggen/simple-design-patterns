@@ -3,23 +3,21 @@ package com.farm.factory;
 import com.farm.animals.Animal;
 import com.farm.animals.Cat;
 import com.farm.animals.Dog;
+import com.farm.animals.Fish;
 
 public class AnimalFactory {
 
-    private static AnimalFactory instance = null;
-    private AnimalFactory() {}
-
-    public static AnimalFactory getInstance() {
-        if (instance == null) instance =  new AnimalFactory();
-        return instance;
-    }
-
-    public Animal createAnimal(String breed) throws Exception {
+    public static Animal createAnimal(String breed) throws Exception {
         switch(breed) {
             case "British Shorthair":
+            case "Munchkin":
             case "American Shorthair":
                 return new Cat();
-            case "Beagle": return new Dog();
+            case "Pitbull":
+            case "Beagle":
+                return new Dog();
+            case "Goldfish":
+                return new Fish();
         }
         throw new Exception("My apologies, but I do not know an animal of type: " + breed);
     }

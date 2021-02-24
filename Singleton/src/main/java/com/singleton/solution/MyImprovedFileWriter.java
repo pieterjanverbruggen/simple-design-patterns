@@ -9,19 +9,16 @@ public class MyImprovedFileWriter {
     public static final String filename = "./Singleton/logfile_solution.log";
     private File file;
     private FileWriter writer;
-
-    /**
-     * TODO Change this to a Singleton pattern so that no double file is create
-     * Clearly you cannot change the code in main
-     * And also cannot built an extra check for file existence in this class
-     */
+    private static MyImprovedFileWriter instance;
 
     public static MyImprovedFileWriter getInstance() {
-        MyImprovedFileWriter myImprovedFileWriter = new MyImprovedFileWriter();
-        return myImprovedFileWriter;
+        if (instance == null) {
+            instance = new MyImprovedFileWriter();
+        }
+        return instance;
     }
 
-    public MyImprovedFileWriter() {
+    private MyImprovedFileWriter() {
         createFile();
     }
 

@@ -34,7 +34,7 @@ public class Main {
         try {
             Files.deleteIfExists(Paths.get(MyFileWriter.filename));
             Files.deleteIfExists(Paths.get(MyImprovedFileWriter.filename));
-            risk();
+            //risk();
             solution();
         } catch (IOException e) {
             e.printStackTrace();

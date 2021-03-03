@@ -15,11 +15,11 @@ public class AnimalFactory {
 
     public Animal createAnimal(String breed) throws Exception {
         switch(breed) {
-            case "British Shorthair": return new Cat(new Normal());
-            case "American Shorthair": return new Cat(new Angry());
-            case "Beagle": return new Dog(new Normal());
-            case "Golden Retriever": return new Dog(new Sweet());
-            case "Pitbull": return new Dog(new Angry());
+            case "British Shorthair": return new Cat(breed, new Normal());
+            case "American Shorthair": return new Cat(breed, new Angry());
+            case "Beagle": return new Dog(breed, new Normal());
+            case "Golden Retriever": return new Dog(breed, new Sweet());
+            case "Pitbull": return new Dog(breed, new Angry());
         }
         throw new Exception("My apologies, but I do not know an animal of type: " + breed);
     }

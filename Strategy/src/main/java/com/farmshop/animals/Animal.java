@@ -8,17 +8,19 @@ public abstract class Animal {
     private Mood mood;
     protected String sound;
     protected String kind;
+    protected String breed;
 
     protected Animal() {
         this.mood = new Normal();
     }
 
-    protected Animal(Mood mood) {
+    protected Animal(String breed, Mood mood) {
         this.mood = mood;
+        this.breed = breed;
     }
 
     public void makeSound() {
-        System.out.println(kind + " says " + mood.changeMood(sound));
+        System.out.println(breed + " " + kind + " says " + mood.changeMood(sound));
     }
 
 }

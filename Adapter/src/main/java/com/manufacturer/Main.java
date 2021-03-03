@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Start the program");
 
-        Car focus = new Car("Ford", "Focus", "red");
-        Car auris = new Car("Toyota", "Auris", "blue");
-        Car golf = new Car("Volkswagen", "Golf", "green");
+        OriginalAmericanCar focus = new OriginalAmericanCar("Ford", "Focus", "red");
+        OriginalAmericanCar auris = new OriginalAmericanCar("Toyota", "Auris", "blue");
+        OriginalAmericanCar golf = new OriginalAmericanCar("Volkswagen", "Golf", "green");
 
         focus.increaseSpeed(80);
         auris.increaseSpeed(50);
@@ -20,9 +20,9 @@ public class Main {
          - Isn't there any way we can simply wrap it... ?
          */
 
-        focus.displaySpeed();
-        auris.displaySpeed();
-        golf.displaySpeed();
+        focus.showMilesPerHour();
+        auris.showMilesPerHour();
+        golf.showMilesPerHour();
 
         System.out.println("Stop the program");
     }

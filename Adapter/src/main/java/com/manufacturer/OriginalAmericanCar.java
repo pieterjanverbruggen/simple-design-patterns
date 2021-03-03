@@ -1,6 +1,6 @@
 package com.manufacturer;
 
-public class Car {
+public class OriginalAmericanCar {
 
     // Data fields
     private String type;
@@ -9,7 +9,7 @@ public class Car {
     private int speed;
 
     // Constructor
-    public Car(String type, String model, String color) {
+    public OriginalAmericanCar(String type, String model, String color) {
         this.type = type;
         this.model = model;
         this.color = color;
@@ -21,7 +21,7 @@ public class Car {
         return this.speed;
     }
 
-    public void displaySpeed() {
+    public void showMilesPerHour() {
         System.out.println("This car is driving at " + speed + " miles per hour");
     }
 }

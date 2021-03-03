@@ -8,10 +8,15 @@ public class Main {
         Package order = new Package();
         order.printStatus();
         order.nextState();
+        order.printStatus();
         order.nextState();
+        order.printStatus();
         order.nextState();
+        order.printStatus();
         order.previousState();
+        order.printStatus();
         order.previousState();
+        order.printStatus();
         order.previousState();
         order.printStatus();
         System.out.println("Stop the program");

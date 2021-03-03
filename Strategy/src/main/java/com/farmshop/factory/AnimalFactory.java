@@ -1,8 +1,7 @@
 package com.farmshop.factory;
 
 import com.farmshop.animals.*;
-import com.farmshop.strategy.Angry;
-import com.farmshop.strategy.Sweet;
+import com.farmshop.strategy.*;
 
 public class AnimalFactory {
 
@@ -16,11 +15,11 @@ public class AnimalFactory {
 
     public Animal createAnimal(String breed) throws Exception {
         switch(breed) {
-            case "British Shorthair":
-            case "American Shorthair":
-                return new Cat(new Sweet());
-            case "Beagle": return new Dog(new Sweet());
-            case "Pitbull": return new Dog(new Angry());
+            case "British Shorthair": return new Cat(breed, new Normal());
+            case "American Shorthair": return new Cat(breed, new Angry());
+            case "Beagle": return new Dog(breed, new Normal());
+            case "Golden Retriever": return new Dog(breed, new Sweet());
+            case "Pitbull": return new Dog(breed, new Angry());
         }
         throw new Exception("My apologies, but I do not know an animal of type: " + breed);
     }

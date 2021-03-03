@@ -4,8 +4,8 @@ import com.farmshop.strategy.Mood;
 
 public class Dog extends Animal {
 
-    public Dog(Mood mood) {
-        super(mood);
+    public Dog(String breed, Mood mood) {
+        super(breed, mood);
         this.kind = "Dog";
         this.sound = "Woof-Woof";
     }
